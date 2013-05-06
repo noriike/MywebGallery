@@ -12,14 +12,14 @@ namespace MywebGallery.resources.Data.car
         {
             CarCollection carlst = new CarCollection();
 
-            carlst.Add(new Car("アルファード", "3000000", CarMaker.TOYOTA));
-            carlst.Add(new Car("オデッセイ", "2800000", CarMaker.HONDA));
-            carlst.Add(new Car("レガシー", "2870000", CarMaker.SUBARU));
-            carlst.Add(new Car("カローラ", "1800000", CarMaker.TOYOTA));
-            carlst.Add(new Car("エルグランド", "3200000", CarMaker.NISSAN));
-            carlst.Add(new Car("デリカD5", "2500000", CarMaker.MITSUBISHI));
-            carlst.Add(new Car("GT-R", "5000000", CarMaker.NISSAN));
-            carlst.Add(new Car("ROADSTAR", "2300000", CarMaker.MAZDA));
+            carlst.Add(new Car("アルファード", "3000000", CarMakerType.TOYOTA));
+            carlst.Add(new Car("オデッセイ", "2800000", CarMakerType.HONDA));
+            carlst.Add(new Car("レガシー", "2870000", CarMakerType.SUBARU));
+            carlst.Add(new Car("カローラ", "1800000", CarMakerType.TOYOTA));
+            carlst.Add(new Car("エルグランド", "3200000", CarMakerType.NISSAN));
+            carlst.Add(new Car("デリカD5", "2500000", CarMakerType.MITSUBISHI));
+            carlst.Add(new Car("GT-R", "5000000", CarMakerType.NISSAN));
+            carlst.Add(new Car("ROADSTAR", "2300000", CarMakerType.MAZDA));
 
             return carlst;
 

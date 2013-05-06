@@ -22,7 +22,12 @@
                 <table>
                     <tr>
                         <td>
-                            <a href="samples/GridViewCars.aspx">GridView</a>
+                            <a href="samples/GridView/GridViewCars.aspx">GridView</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/Ajax/PopUp.aspx">Ajax</a>
                         </td>
                     </tr>
                 </table>

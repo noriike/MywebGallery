@@ -38,7 +38,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>packages\AjaxControlToolkit.7.0429\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>packages\AjaxControlToolkit.7.0429\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SanitizerProviders">
+      <HintPath>packages\AjaxControlToolkit.7.0429\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -58,8 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.aspx" />
-    <Content Include="samples\GridViewCars.aspx" />
-    <Content Include="samples\GridViewCarsPrint.aspx" />
+    <Content Include="samples\Ajax\PopUp.aspx" />
+    <Content Include="samples\GridView\GridViewCars.aspx" />
+    <Content Include="samples\GridView\GridViewCarsPrint.aspx" />
     <Content Include="styles\default.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -75,23 +85,31 @@
     <Compile Include="resources\Data\car\Car.cs" />
     <Compile Include="resources\Data\car\CarCollection.cs" />
     <Compile Include="resources\Data\car\CarDao.cs" />
-    <Compile Include="resources\Data\car\CarMaker.cs" />
-    <Compile Include="samples\GridViewCars.aspx.cs">
+    <Compile Include="resources\Data\car\CarMakerType.cs" />
+    <Compile Include="samples\Ajax\PopUp.aspx.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples\Ajax\PopUp.aspx.designer.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="samples\GridView\GridViewCars.aspx.cs">
       <DependentUpon>GridViewCars.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="samples\GridViewCars.aspx.designer.cs">
+    <Compile Include="samples\GridView\GridViewCars.aspx.designer.cs">
       <DependentUpon>GridViewCars.aspx</DependentUpon>
     </Compile>
-    <Compile Include="samples\GridViewCarsPrint.aspx.cs">
+    <Compile Include="samples\GridView\GridViewCarsPrint.aspx.cs">
       <DependentUpon>GridViewCarsPrint.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="samples\GridViewCarsPrint.aspx.designer.cs">
+    <Compile Include="samples\GridView\GridViewCarsPrint.aspx.designer.cs">
       <DependentUpon>GridViewCarsPrint.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\noriwebsamples - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\noriwebsamples - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">

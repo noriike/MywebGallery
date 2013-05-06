@@ -5,6 +5,7 @@ using System.Web;
 
 namespace MywebGallery.resources.Data.car
 {
+    [Serializable]
     public class Car
     {
         public static String Id { set; get; }
@@ -15,7 +16,7 @@ namespace MywebGallery.resources.Data.car
 
         public String Price { get; set; }
 
-        public CarMaker Maker { get; set; }
+        public CarMakerType Maker { get; set; }
 
         public String ImagePath { get; set; }
 
@@ -24,7 +25,7 @@ namespace MywebGallery.resources.Data.car
             
         }
 
-        public Car(string name, string price, CarMaker maker)
+        public Car(string name, string price, CarMakerType maker)
         {
             if (Id == null)
             {

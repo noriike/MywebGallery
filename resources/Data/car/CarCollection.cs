@@ -5,6 +5,7 @@ using System.Web;
 
 namespace MywebGallery.resources.Data.car
 {
+    [Serializable]
     public class CarCollection:List<Car>
     {
 

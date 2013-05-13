@@ -10,29 +10,38 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:GridView ID="grdCars" runat="server" AutoGenerateColumns="False" 
-             OnRowDataBound="grdCars_RowDataBound">
-            <Columns>
-                <asp:TemplateField>
-                    <ItemTemplate>
-                        <asp:LinkButton ID="lnkPrint" runat="server">印刷</asp:LinkButton>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField>
-                    <ItemTemplate>
-                        <b><%# Eval("Name") %></b>
-                    </ItemTemplate>
-                </asp:TemplateField>
-                <asp:TemplateField>
-                    <ItemStyle Width="200px" />
-                    <ItemTemplate>
-                        <span style="background-color:lightslategray;"><%# Eval("Maker") %></span><br />
-                        <span><%# Eval("Price") %></span>
-                    </ItemTemplate>
+        <ajaxToolkit:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server"></ajaxToolkit:ToolkitScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <asp:GridView ID="grdCars" runat="server" AutoGenerateColumns="False" 
+                                     OnRowDataBound="grdCars_RowDataBound" OnRowCommand="grdCars_RowCommand1">
+                        <Columns>
+                            <asp:TemplateField>
+                                <ItemTemplate>
+                                    <asp:LinkButton ID="lnkPrint" runat="server">印刷</asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField>
+                                <ItemTemplate>
+                                    <b><%# Eval("Name") %></b>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                            <asp:TemplateField>
+                                <ItemStyle Width="200px" />
+                                <ItemTemplate>
+                                    <span style="background-color:lightslategray;"><%# Eval("Maker") %></span><br />
+                                    <span><%# Eval("Price") %></span>
+                                </ItemTemplate>
                     
-                </asp:TemplateField>
-            </Columns>
-        </asp:GridView>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
+            </ContentTemplate>
+        </asp:UpdatePanel>
+       
+                
+            
+
     </div>
     </form>
 </body>

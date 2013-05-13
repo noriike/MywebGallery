@@ -30,6 +30,11 @@
                             <a href="samples/Ajax/PopUp.aspx">Ajax</a>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/JavaScript/CsharpToJavascript.aspx">Javascript呼び出し</a>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="footer">

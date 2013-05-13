@@ -15,6 +15,11 @@ namespace MyWebGallery.samples.JavaScript
 
         }
 
+        /// <summary>
+        /// 動的に.aspx側のjavascript呼び出しjavascript作成
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Button1_Click(object sender, EventArgs e)
         {
 
@@ -31,6 +36,11 @@ namespace MyWebGallery.samples.JavaScript
             
         }
 
+        /// <summary>
+        /// javascript側からpostbackで呼び出される
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("WebForm1.aspx");

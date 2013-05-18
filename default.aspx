@@ -35,6 +35,22 @@
                             <a href="samples/JavaScript/CsharpToJavascript.aspx">Javascript呼び出し</a>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/GridViewDetail/WebForm1.aspx">griddetail</a>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/FileUpload/WebForm1.aspx">FileUpload</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/BingSearch/BingSearch.aspx">BingSearch</a>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="footer">

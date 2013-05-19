@@ -37,7 +37,7 @@ namespace MyWebGallery.samples.BingSearch
             var bingContainer = new Bing.BingSearchContainer(new Uri(rootUri));
 
             // Replace this value with your account key.
-            var accountKey = "";
+            var accountKey = "SOKyLs1uETTMXQzh+mnSmFLXzRFrGYZTFaaN2UzPkQs";
 
             // Configure bingContainer to use your credentials.
             bingContainer.Credentials = new NetworkCredential(accountKey, accountKey);

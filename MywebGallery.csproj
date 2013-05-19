@@ -93,6 +93,9 @@
     <Content Include="samples\GridViewDetail\WebForm1.aspx" />
     <Content Include="samples\GridView\GridViewCars.aspx" />
     <Content Include="samples\GridView\GridViewCarsPrint.aspx" />
+    <Content Include="samples\HttpResponse\WebForm1.aspx" />
+    <Content Include="samples\HttpResponse\WebForm2.aspx" />
+    <Content Include="samples\HttpResponse\WebForm3.aspx" />
     <Content Include="samples\JavaScript\CsharpToJavascript.aspx" />
     <Content Include="samples\JavaScript\WebForm1.aspx" />
     <Content Include="scripts\jquery-1.8.2.intellisense.js" />
@@ -167,6 +170,27 @@
     </Compile>
     <Compile Include="samples\HttpHandler\Handler1.ashx.cs">
       <DependentUpon>Handler1.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="samples\HttpResponse\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
     </Compile>
     <Compile Include="samples\JavaScript\CsharpToJavascript.aspx.cs">
       <DependentUpon>CsharpToJavascript.aspx</DependentUpon>

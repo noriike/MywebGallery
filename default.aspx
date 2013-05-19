@@ -51,6 +51,16 @@
                             <a href="samples/BingSearch/BingSearch.aspx">BingSearch</a>
                         </td>
                     </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/HttpResponse/WebForm1.aspx">HttpResponse Jpeg</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="samples/HttpResponse/WebForm2.aspx">HttpResponse text/CSV</a>
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="footer">
